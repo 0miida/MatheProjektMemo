@@ -1,2 +1,4 @@
 # MatheProjektMemo
-f u
+Moin!
+
+Das ist ein Memoryspiel für Mathe
