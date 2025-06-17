@@ -1,0 +1,33 @@
+body { 
+    background-color: rgb(166, 213, 255);
+
+}
+
+.game-board {
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns:repeat(2, 120px) ;
+    grid-gap: 10px;
+}
+
+.flip-cards {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+
+}
+
+.card-flipped {
+    background-color: lightblue;
+    color: white;
+    font-size: 12px;
+}
