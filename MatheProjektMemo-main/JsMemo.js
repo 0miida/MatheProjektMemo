@@ -1,11 +1,27 @@
 // main.js
-import { cards } from './cards.js';
+import { cards_e, cards_m, cards_h } from './cards.js';
+
+
 
 const board = document.getElementById('game-board');
 let selectedCards = [];
 let matchedCards = [];
+let shuffledCards = [];
 
-const shuffledCards = shuffle([...cards, ...cards]);
+function startGame(difficulty) {
+  switch (difficulty) {
+    case 'leicht':
+      shuffledCards = shuffle([...cards_e, ...cards_e]);
+      break;
+    case 'mittel':
+      shuffledCards = shuffle([...cards_m, ...cards_m]);
+      break;
+    case 'schwer':
+      shuffledCards = shuffle([...cards_h, ...cards_h]);
+      break;
+  }
+  initGame();
+}
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -60,4 +76,4 @@ function initGame() {
   });
 }
 
-initGame();
+window.startGame = startGame;
