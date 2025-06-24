@@ -1,5 +1,4 @@
 # MatheProjektMemo
-Das ist unser Projekt, ein Memory spiel zu binomische Formel, bitte geben sie uns eine 1!
 
 Steinhartermann und 0miida
 
